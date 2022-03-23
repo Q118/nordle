@@ -42,9 +42,6 @@ const check = async (guess) => {
     return results;
 }
 
-
-
-
 const play = async (tries) => {
     // the user gets 5 tries to solve the puzzle not including the first guess
     if (tries < 6) {
@@ -87,7 +84,7 @@ async function main() {
     // then get the random word with letter
     sendCall(letter).then((word) => {
         puzzle = word;
-        cl(` ${puzzle} in callback  `);
+        // cl(` ${puzzle} in callback  `);
         //! uncomment above to see the answer for testing
         afterMain(); // start the game after the puzzle is set
     }).catch((err) => {

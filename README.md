@@ -9,5 +9,4 @@ wordle with node for your terminal!
 3. run `npm start` to begin the game in your terminal
 4. You have 6 tries to guess the word.
 
-
 *Node v12 or Higher required*
