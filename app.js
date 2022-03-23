@@ -10,11 +10,11 @@ const cl = (x) => { console.log(x) };
 const wordlePrompt = {
     type: "text",
     name: "word",
-    message: "Enter a 5 word...",
+    message: "Enter a 5 letter word...",
     validate: value => value.length != 5 ? 'Word must be 5 letters' : true
 };
 
-const check = async (guess) => {
+const check = (guess) => {
     let results = [];
     // loop over each letter in the word
     for (let i in guess) {
