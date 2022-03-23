@@ -71,7 +71,8 @@ async function main() {
     // then get the random word with letter
     sendCall(letter).then((word) => {
         puzzle = word;
-        cl(puzzle, "in then");
+        // cl(puzzle, "in then");
+        //! uncomment above to see the answer 
         afterMain(); // start the game after the puzzle is set
     }).catch((err) => {
         console.log(err);

@@ -3,12 +3,12 @@ const cl = (x) => { console.log(x) };
 
 const getData = (url) => {
     let p = new Promise((resolve, reject) => {
-        cl("inside promise")
+        // cl("inside promise")
         fetchUrl(url, (err, meta, body) => {
             if (err) {
                 reject(err);
             }
-            cl("before resolve");
+            // cl("before resolve");
             resolve(body.toString());
         });
     });
@@ -28,7 +28,7 @@ const sendCall = async (letter) => {
         }
         wordle = wordsList[Math.floor(Math.random() * wordsList.length)];
     } catch (error) {
-        console.log(error);
+        cl(error);
     }
     return wordle;
 }
