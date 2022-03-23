@@ -44,6 +44,9 @@ const check = async (guess) => {
     return results;
 }
 
+
+
+
 const play = async (tries) => {
     // the user gets 5 tries to solve the puzzle not including the first guess
     if (tries < 6) {
