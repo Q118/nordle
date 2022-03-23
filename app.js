@@ -60,8 +60,8 @@ const play = async (tries) => {
                 for (let i in guess) {
                     process.stdout.write(chalk.white.bgGreen.bold(` ${guess[i]} \t`));
                 }
-                process.stdout.write("\n");
-                cl(chalk.white.bgBlueBright.bold("You win!\n"));
+                process.stdout.write("\n\n");
+                cl(chalk.white.bgBlueBright.bold("WINNER!\n"));
             } else {
                 check(guess);
                 // this forces std out to print out the results for the last guess
@@ -88,7 +88,7 @@ async function main() {
     sendCall(letter).then((word) => {
         puzzle = word;
         cl(` ${puzzle} in callback  `);
-        //! uncomment above to see the answer 
+        //! uncomment above to see the answer for testing
         afterMain(); // start the game after the puzzle is set
     }).catch((err) => {
         console.log(err);
